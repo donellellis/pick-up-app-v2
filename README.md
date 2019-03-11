@@ -42,7 +42,7 @@ The Pick-up app is a tool for riders to schedule a car pick-up to their local de
 
 ### Back End
 
-You can find the back end of this app [here](https://github.com/tishana/PickUpAppAPI) .
+You can find the back end of this app [here](https://github.com/donellellis/pickup-app-api-v2) .
 
 ### Front End
 
@@ -54,7 +54,7 @@ You can find the back end of this app [here](https://github.com/tishana/PickUpAp
 6. See link above for instructions on launching the back end
 
 ```
-git clone git@github.com:donellellis/PickUpApp.git
+git clone git@github.com:donellellis/pickup-app-v2.git
 cd PickUpApp
 npm install
 code .
