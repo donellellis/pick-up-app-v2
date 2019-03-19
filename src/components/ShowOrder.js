@@ -48,16 +48,16 @@ class ShowOrder extends Component {
 
         if(typeof order != "undefined"){
             return (    
-                <div>
+                <div className="showOrder">
                     <h1>Thank you for your order, {order.name}!</h1>
-                    <h3>Confirmation Number</h3>
-                    <h2>{order._id}</h2>
-                    <h3>Pickup Address</h3>
-                    <h2>{order.pickUpAddress}</h2>
-                    <h3>Dropoff Address </h3>
-                    <h2>{order.dropOffAddress}</h2>
-                    <h3>Pickup Time</h3>
-                    <h2>{order.time}</h2>
+                    <h2>Confirmation Number</h2>
+                    <h3>{order._id}</h3>
+                    <h2>Pickup Address</h2>
+                    <h3>{order.pickUpAddress}</h3>
+                    <h2>Dropoff Address </h2>
+                    <h3>{order.dropOffAddress}</h3>
+                    <h2>Pickup Time</h2>
+                    <h3>{order.time}</h3>
                     <form onSubmit={this.handleDeleteOrder}>
                         <input type="submit" value="cancel order"></input>
                     </form>

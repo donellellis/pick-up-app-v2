@@ -28,15 +28,13 @@ class SearchOrder extends Component {
     }
 
     return (
-      <div >
+      <div className="order">
       <form onSubmit={this.handleSubmit}>
-        <h2>
-            existing order
-        </h2>
-        <div >
-        <input type="text" value={this.state.id} onChange={this.handleIdChange} placeholder="Order number" aria-label="Search"/>
-        </div>
-        <button type="submit">Search</button>
+        <h1 className="order-secondaryTitle">existing order</h1>
+        <label>order number
+          <input type="text" value={this.state.id} onChange={this.handleIdChange}/>
+        </label>
+        <input type="submit" value="search"></input>
       </form>
       </div>
     );

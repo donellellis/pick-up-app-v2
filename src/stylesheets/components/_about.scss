@@ -1,0 +1,10 @@
+.about{
+    @include whiteBackground;
+    justify-content: flex-start;
+    h1{
+        @include heading;
+    }
+    p{
+        margin-top: 10px;
+    }
+}

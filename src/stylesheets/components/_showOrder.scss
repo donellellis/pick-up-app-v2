@@ -1,0 +1,23 @@
+.showOrder{
+    @include whiteBackground;
+    justify-content: flex-start;
+
+    h1{
+        @include heading;
+        margin-bottom: 45px;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+
+    h3{
+        @include sub-heading;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    input[type=submit]{
+        @include button
+    }
+}

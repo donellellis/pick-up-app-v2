@@ -1,0 +1,31 @@
+@mixin heading{
+    margin-bottom: 7px;
+}
+
+@mixin sub-heading{
+    font-size: 24px;
+}
+
+@mixin button{
+    width: auto;
+        margin-bottom: 0px;
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px black solid;
+}
+
+@mixin formField{
+    width: 100%;
+    margin-bottom: 3px;
+    height: 25px;
+}
+
+@mixin whiteBackground{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $textColorPrimary;
+    width: 325px;
+    padding: 30px 45px;
+}

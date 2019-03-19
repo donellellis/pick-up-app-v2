@@ -75,7 +75,7 @@ class NewOrder extends Component {
       }
 
     return (
-        <div className='newOrder'>
+        <div className='order'>
             <form onSubmit={this.handleSubmit}>
                 <h1>new order</h1>
                 <label>name
@@ -84,10 +84,16 @@ class NewOrder extends Component {
                 <label> email
                     <input type="text" value={this.state.email} onChange={this.handleEmailChange}/>
                 </label>
-                <input type="text" value={this.state.pickUpAddress} onChange={this.handlePickUpAddressChange} />
-                <input type="text" value={this.state.dropOffAddress} onChange={this.handleDropOffAddressChange} />
+                <label> pick up address
+                    <input type="text" value={this.state.pickUpAddress} onChange={this.handlePickUpAddressChange} />
+                </label>
+                <label>drop off address
+                    <input type="text" value={this.state.dropOffAddress} onChange={this.handleDropOffAddressChange} />
+                </label>
+                <label>time
                 <input type="text" value={this.state.time} onChange={this.handleTimeChange} />
-                <input type="submit" value="Place Order" />
+                </label>
+                <input type="submit" value="place order" />
             </form>
       </div>
     );

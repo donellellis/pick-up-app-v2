@@ -1,0 +1,6 @@
+.delete{
+    @include whiteBackground;
+    h1{
+        @include heading;
+    }
+}
