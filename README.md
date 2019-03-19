@@ -2,7 +2,7 @@
 
 The Pick-up app is a tool for riders to schedule a car pick-up to their local destination. The app’s automated dispatch checks a drivers' availability and pairs with a compatible pick-up request. The app shows riders that the pick-up has been booked.
 
-![PickUpApp](https://i.imgur.com/rvGvJfT.jpg)
+![PickUpApp](https://i.imgur.com/3y8x8l2.jpg)
 
 ## Team Members
 - Donell Ellis
@@ -15,8 +15,7 @@ The Pick-up app is a tool for riders to schedule a car pick-up to their local de
 - Express
 - React
 - Node
-- HTML
-- CSS
+- SASS
 
 ## Our Approach
 
