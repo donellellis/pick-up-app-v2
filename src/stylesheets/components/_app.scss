@@ -1,0 +1,35 @@
+
+@import '../base/all.scss';
+header{
+    display: flex;
+    background-color: $textColorSecondary;
+    height: $navHeight;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    align-items: baseline;
+    margin-left: $navHeight * 2;
+   
+
+    a{
+        color: $textColorPrimary;
+        margin-right: 30px;
+        font-size: 20px;
+    }
+}
+
+.app-logo{
+    font-size: 30px;
+}
+
+main{
+    display: flex;
+    padding: 60px;
+    background-image: $imageCover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(100vh - 180px)
+}

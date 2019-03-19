@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './NewOrder.css'
 import axios from 'axios';
 import { Redirect } from 'react-router'
 
@@ -76,30 +75,20 @@ class NewOrder extends Component {
       }
 
     return (
-        <div className="neworder-div">
-        <form className="form-inline" onSubmit={this.handleSubmit}>
-            <h1>new order</h1>
-            <div className="newOrder">
-            <div className="orderInput">
-            <input className="form-control" type="text" value={this.state.name} onChange={this.handleNameChange} placeholder="Name" />
-            </div>
-            <div className="orderInput">
-            <input className="form-control" type="text" value={this.state.email} onChange={this.handleEmailChange} placeholder="Email" />
-            </div>
-            <div className="orderInput">
-            <input className="form-control" type="text" value={this.state.pickUpAddress} onChange={this.handlePickUpAddressChange} placeholder="Pickup Address" />
-            </div>
-            <div className="orderInput">
-            <input className="form-control" type="text" value={this.state.dropOffAddress} onChange={this.handleDropOffAddressChange} placeholder="Dropoff Address" />
-            </div>
-            <div className="orderInput">
-            <input className="form-control" type="text" value={this.state.time} onChange={this.handleTimeChange} placeholder="Time" />
-            </div>
-            <div className="orderInput">
-            <input className="placeOrder placeOrder:hover" type="submit" value="Place Order" />
-            </div>
-            </div>
-      </form>
+        <div className='newOrder'>
+            <form onSubmit={this.handleSubmit}>
+                <h1>new order</h1>
+                <label>name
+                    <input type="text" value={this.state.name} onChange={this.handleNameChange}/>
+                </label>
+                <label> email
+                    <input type="text" value={this.state.email} onChange={this.handleEmailChange}/>
+                </label>
+                <input type="text" value={this.state.pickUpAddress} onChange={this.handlePickUpAddressChange} />
+                <input type="text" value={this.state.dropOffAddress} onChange={this.handleDropOffAddressChange} />
+                <input type="text" value={this.state.time} onChange={this.handleTimeChange} />
+                <input type="submit" value="Place Order" />
+            </form>
       </div>
     );
   }

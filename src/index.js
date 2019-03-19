@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App/App.js';
+import App from './components/App';
 import {
     BrowserRouter as Router
 } from "react-router-dom";
+import './stylesheets/main.scss'
 
 require('dotenv').config()
 

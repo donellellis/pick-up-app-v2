@@ -1,0 +1,8 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $textColorPrimary;
+    width: 300px;
+    padding: 30px 60px;
+}
